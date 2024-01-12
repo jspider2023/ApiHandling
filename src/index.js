@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import  style from './index.module.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Uncontroll from './Uncontroll';
+import Counter2 from './Counter2';
+import Todo from './Todo';
+import Product from './component/Product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+  {/* <h1 className={style.test}>hello </h1> */}
+   {/* <App/> */}
+   {/* <Uncontroll/> */}
+   {/* <Todo/> */}
+ <App/>
+  </>
+
+     
 );
 
 // If you want to start measuring performance in your app, pass a function
